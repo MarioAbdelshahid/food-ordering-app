@@ -1,0 +1,153 @@
+.container {
+  width: 86%;
+  margin: 40px auto;
+}
+
+.cartPage h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.cartLayout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+  align-items: start;
+}
+
+.cartItems {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cartItem {
+  background: var(--card);
+  padding: 14px;
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  gap: 15px;
+  align-items: center;
+}
+
+.cartItem img {
+  width: 100px;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.cartItem h3 {
+  margin: 0 0 8px;
+}
+
+.cartItem p {
+  margin: 0 0 10px;
+  color: var(--muted);
+}
+
+.quantityControls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantityControls button {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: #eee;
+  border-radius: 6px;
+  font-weight: 800;
+}
+
+.removeBtn {
+  border: none;
+  background: var(--danger-bg);
+  color: var(--danger);
+  font-size: 22px;
+  border-radius: 8px;
+  width: 38px;
+  height: 38px;
+}
+
+.checkoutCard {
+  background: var(--card);
+  padding: 22px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.checkoutCard h3 {
+  margin-top: 0;
+}
+
+.checkoutCard label {
+  display: block;
+  font-weight: 700;
+  margin: 15px 0 7px;
+}
+
+.checkoutCard textarea,
+.checkoutCard select {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.checkoutCard textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.checkoutCard button[type="submit"] {
+  width: 100%;
+  border: none;
+  background: var(--primary);
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.error {
+  background: var(--danger-bg);
+  color: var(--danger);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+@media (max-width: 1050px) {
+  .cartLayout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 780px) {
+  .container {
+    width: 90%;
+  }
+
+  .cartItem {
+    grid-template-columns: 80px 1fr;
+  }
+
+  .cartItem img {
+    width: 80px;
+    height: 70px;
+  }
+
+  .removeBtn {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+}

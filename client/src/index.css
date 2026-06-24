@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #e85d04;
+  --dark: #222;
+  --muted: #666;
+  --border: #eee;
+  --bg: #f8f8f8;
+  --card: #ffffff;
+  --danger: #b00020;
+  --danger-bg: #ffe5e5;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--dark);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.rtl {
+  direction: rtl;
+}

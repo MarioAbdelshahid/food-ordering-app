@@ -1,0 +1,56 @@
+.authPage {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.authCard {
+  background: var(--card);
+  width: 100%;
+  max-width: 420px;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.authCard h2 {
+  margin-top: 0;
+}
+
+.authCard label {
+  display: block;
+  font-weight: 700;
+  margin: 15px 0 7px;
+}
+
+.authCard input {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.authCard button {
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.authCard a {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.error {
+  background: var(--danger-bg);
+  color: var(--danger);
+  padding: 10px;
+  border-radius: 8px;
+}

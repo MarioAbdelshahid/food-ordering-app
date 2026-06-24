@@ -1,0 +1,89 @@
+.container {
+  width: 86%;
+  margin: 40px auto;
+}
+
+.ordersPage h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.ordersList {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.orderCard {
+  background: var(--card);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.orderHeader,
+.statusRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.orderHeader h3 {
+  margin: 0 0 6px;
+}
+
+.orderHeader p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.restaurantName {
+  color: var(--primary);
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.statusRow {
+  background: #fafafa;
+  padding: 12px;
+  border-radius: 12px;
+  margin: 18px 0;
+}
+
+.orderItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.miniItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f7f7f7;
+  padding: 8px 10px;
+  border-radius: 999px;
+}
+
+.miniItem img {
+  width: 34px;
+  height: 34px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.addressText {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+@media (max-width: 780px) {
+  .container {
+    width: 90%;
+  }
+
+  .orderHeader,
+  .statusRow {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,292 @@
+.adminPage {
+  width: 86%;
+  margin: 40px auto;
+  padding-bottom: 50px;
+}
+
+.adminHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.adminHeader h2 {
+  font-size: 32px;
+  margin: 0 0 8px;
+}
+
+.adminHeader p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.adminTabs {
+  display: flex;
+  gap: 10px;
+}
+
+.adminTabs button {
+  border: 1px solid #ddd;
+  background: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.activeTab {
+  background: var(--primary) !important;
+  color: white;
+  border-color: var(--primary) !important;
+}
+
+.adminMessage {
+  background: #fff3e6;
+  color: #9a4a00;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.adminSection {
+  background: var(--card);
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.adminSection h3 {
+  margin-top: 0;
+}
+
+.adminOrders {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.adminOrderCard {
+  border: 1px solid var(--border);
+  padding: 18px;
+  border-radius: 16px;
+}
+
+.adminOrderTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.adminOrderTop h4 {
+  margin: 0 0 8px;
+}
+
+.adminOrderTop p {
+  margin: 4px 0;
+  color: var(--muted);
+}
+
+.adminOrderInfo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  background: #fafafa;
+  padding: 12px;
+  border-radius: 12px;
+  margin: 15px 0;
+}
+
+.adminOrderInfo span {
+  background: white;
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+  border-radius: 999px;
+}
+
+.adminOrderItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.adminOrderItems span {
+  background: #f7f7f7;
+  padding: 8px 10px;
+  border-radius: 999px;
+}
+
+.addressText {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+.adminOrderCard label {
+  display: block;
+  font-weight: 700;
+  margin: 15px 0 7px;
+}
+
+.adminOrderCard select {
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 11px;
+  border-radius: 10px;
+}
+
+.productForm {
+  border: 1px solid var(--border);
+  padding: 18px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.productForm input,
+.productForm textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.productForm textarea {
+  margin-top: 12px;
+  min-height: 85px;
+  resize: vertical;
+}
+
+.checkboxRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 14px 0;
+  font-weight: 700;
+}
+
+.checkboxRow input {
+  width: auto;
+}
+
+.productForm button {
+  border: none;
+  background: var(--primary);
+  color: white;
+  padding: 11px 16px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.adminProductsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.adminProductCard {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  background: white;
+}
+
+.adminProductCard img {
+  width: 150px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.adminProductContent {
+  padding: 14px;
+}
+
+.adminProductContent h4 {
+  margin: 0 0 8px;
+}
+
+.adminProductContent p {
+  color: var(--muted);
+  margin: 0 0 8px;
+}
+
+.adminProductActions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.adminProductActions button {
+  border: none;
+  background: var(--dark);
+  color: white;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.deleteAdminBtn {
+  background: var(--danger) !important;
+}
+
+@media (max-width: 850px) {
+  .adminPage {
+    width: 90%;
+  }
+
+  .adminHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .adminTabs {
+    width: 100%;
+  }
+
+  .adminTabs button {
+    flex: 1;
+  }
+
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .adminProductsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .adminProductCard {
+    grid-template-columns: 1fr;
+  }
+
+  .adminProductCard img {
+    width: 100%;
+    height: 180px;
+  }
+
+  .adminOrderTop {
+    flex-direction: column;
+  }
+.adminOrderCard select:disabled {
+  background: #f1f1f1;
+  color: #777;
+  cursor: not-allowed;
+}
+
+.finalStatusNote {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+.adminProductActions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+}
